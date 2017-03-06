@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Tugas 1 &bull; Tag - Tag HTML</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="/css/normalize.css" rel="stylesheet">
+  <link href="/css/tugas1.css" rel="stylesheet">
+</head>
+<body>
+  <div class="content">
+    <div class="row">
+      <h1>Mengenai Tugas 1</h1>
+      <p>Tugas pertama matakuliah Pengembangan Konten Web adalah membaca buku, namun ini adalah tugas praktik yang pertama. Tujuan dari tugas ini adalah mahasiswa dapat menuliskan tag - tag yang ada di dalam standar HTML. Di dalam halaman ini saya menambahkan tag - tag terbaru versi <strong>HTML5</strong></p>
+
+      <div class="clearfix"></div>
+
+      <h2>Tag di dalam &lt;head&gt;&lt;/head&gt;</h2>
+      <p>Tag <code>&lt;head&gt;&lt;/head&gt;</code> adalah kepala dalam dokumen html, tag ini tidak ditampilkan di browser, namun menampung informasi yang dikenali browser, berikut tag - tag di dalam <code>&lt;head&gt;&lt;/head&gt;</code> berikut penjelasannya:</p>
+      <ul>
+        <li><code> &lt;title&gt;Contoh Judul Halaman&lt;/title&gt; </code> : Untuk memberi judul yang akan tampil di tab Browser. <a href="https://www.w3.org/wiki/Html/Elements/title" target="_blank">Spec untuk Tag Title</a></li>
+        <li><code>&lt;meta&gt;</code> : Berisi informasi yang beragam, seperti <code>character set, title, keywords, author, viewport, description, open graph </code>. <a href="https://www.w3.org/wiki/HTML/Elements/meta" target="_blank">Spec untuk Tag Meta</a></li>
+        <li><code>&lt;link href=&quot;/css/tugas1.css&quot; rel=&quot;stylesheet&quot;&gt;</code> : Digunakan untuk import <code>css/stylesheet</code> eksternal, bisa juga untuk import favicon. <a href="https://www.w3.org/wiki/Html/Elements/link" target="_blank">Spec untuk Tag Link</a> </li>
+        <li><code>&lt;base href=&quot;/&quot;&gt;</code> : Untuk menspesifikasikan base URL / target di dalam dokumen <a href="https://www.w3.org/wiki/Html/Elements/base" target="_blank">Spec untuk Tag Base</a></li>
+        <li><code>&lt;script&gt;&lt;/script&gt;</code> : Tag untuk menuliskan kode <code>javascript</code> ke dalam dokumen. Untuk pendekatan modern, menaruh script di dalam tag <code>&lt;head&gt;&lt;/head&gt;</code> tidak direkomendasikan, karena memperlambat initial loading halaman. <a href="https://www.w3.org/wiki/Html/Elements/script" target="_blank">Spec untuk Tag Script</a></li>
+      </ul>
+
+      <div class="clearfix"></div>
+
+      <h2>Tag di dalam &lt;body&gt;&lt;/body&gt;</h2>
+      <p>Tag <code>&lt;body&gt;&lt;/body&gt;</code> berisi konten yang akan ditampilkan ke user. Dan ada banyak sekali tag - tag yang dapat dipakai di dalam tag <code>&lt;body&gt;&lt;/body&gt;</code> ini, apalagi versi <code>HTML5</code>. Berikut beberapa yang sering dipakai di dalam tag <code>&lt;body&gt;&lt;/body&gt;</code>:</p>
+
+      <h1>Heading 1 <small><code>&lt;h1&gt;&lt;/h1&gt;</code> Heading 1 sebagai judul teks yang terbesar</small></h1>
+      <h2>Heading 2 <small><code>&lt;h2&gt;&lt;/h2&gt;</code> Heading 2 sebagai judul teks kedua terbesar</small></h2>
+      <h3>Heading 3 <small><code>&lt;h3&gt;&lt;/h3&gt;</code> Heading 3 sebagai judul teks ketiga terbesar</small></h3>
+      <h4>Heading 4 <small><code>&lt;h4&gt;&lt;/h4&gt;</code> Heading 4 sebagai judul teks keempat terbesar</small></h4>
+      <h5>Heading 5 <small><code>&lt;h5&gt;&lt;/h5&gt;</code> Heading 5 sebagai judul teks kelima terbesar</small></h5>
+      <h6>Heading 6 <small><code>&lt;h6&gt;&lt;/h6&gt;</code> Heading 6 sebagai judul teks keenam terbesar</small></h6>
+
+      <div class="clearfix"></div>
+
+      <h2>Tag - tag Paragraf</h2>
+      <div class="row">
+            <p><code>&lt;p&gt;&lt;/p&gt;</code> Paragraf merupakan tag yang mengindikasikan teks tersebut merupakan satu paragraf, secara default akan memiliki style <code>display:block</code> di tiap blok kode.</p>
+            <p>Jika ingin ganti baris di dalam paragraf bisa menggunakan <code>&lt;br&gt;</code> <em>(Break)</em>. Untuk menampilkan link, bisa menggunakan <code>&lt;a href=&quot;&quot;&gt;&lt;/a&gt;</code>.</p>
+      </div>
+
+      <div class="clearfix"></div>
+
+      <h2>Tag - tag Inline teks</h2>
+      <p>Tidak Hanya judul saja, namun terdapat tag - tag untuk menampilkan teks dengan cara berbeda, berikut contohnya:</p>
+      <div class="row">
+          <div class="col-4 m-b-25">
+              <p>Marked Text</p>
+              <p><code>&lt;mark&gt;&lt;/mark&gt;</code> Untuk meng-highlight teks yang relevan terhadap sesuatu, misal pencarian.</p>
+              <mark>Teks yang dicari</mark>
+          </div>
+
+          <div class="col-4 m-b-25">
+              <p>Marked Text</p>
+              <p><code>&lt;mark&gt;&lt;/mark&gt;</code> Untuk meng-highlight teks yang relevan terhadap sesuatu, misal pencarian.</p>
+              <mark>Teks yang dicari</mark>
+          </div>
+
+          <div class="col-4 m-b-25">
+              <p>Deleted Text</p>
+              <p><code>&lt;del&gt;&lt;/del&gt;</code> Untuk mengindikasikan bahwa teks telah dihapus. Style nya mirip dengan <code>strikethrough</code></p>
+              <del>Ini teks yang sudah dihapus</del>
+          </div>
+
+          <div class="col-4 m-b-25">
+              <p>Strikethrough text</p>
+              <p><code>&lt;s&gt;&lt;/s&gt;</code> Untuk mengindikasikan bahwa teks tidak lagi relevan, atau salah, atau tidak lagi dipakai.</p>
+              <s>Ini teks yang tidak lagi relevan</s>
+          </div>
+
+          <div class="col-4 m-b-25">
+              <p>Inserted Text</p>
+              <p><code>&lt;ins&gt;&lt;/ins&gt;</code>Mengindikasikan teks yang di-insert-kan.</p>
+              <ins>Ini teks yang di-insert</ins>
+          </div>
+
+          <div class="col-4 m-b-25">
+              <p>Underlined Text</p>
+              <p><code>&lt;u&gt;&lt;/u&gt;</code>Teks yang digaris bawahi.</p>
+              <u>Ini teks yang bergaris bawah</u>
+          </div>
+
+          <div class="col-4 m-b-25">
+              <p>Small Text</p>
+              <p><code>&lt;small&gt;&lt;/small&gt;</code> Untuk mengurangi penekanan teks di dalam blok tag lain, misal di <code>&lt;h1&gt;&lt;/h1&gt;</code>.</p>
+              <small>Ini teks kecil</small>
+          </div>
+
+          <div class="col-4">
+              <p>Bold Text</p>
+              <p><code>&lt;strong&gt;&lt;/strong&gt;</code> Untuk menambah penekanan teks di dalam blok tag lain. Hurufnya jadi lebih tebal.</p>
+              <strong>This is Bold Text</strong>
+          </div>
+
+          <div class="col-4">
+              <p>Emphasized Text</p>
+              <p><code>&lt;em&gt;&lt;/em&gt;</code>Untuk memberi penekanan teks secara miring <em>(italics)</em>.</p>
+              <em>Ini Istilah Miring</em>
+          </div>
+      </div>
+      <div class="clearfix"></div>
+
+    </div>
+  </div>
+
+</body>
+</html>
